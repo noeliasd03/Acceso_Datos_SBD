@@ -11,8 +11,8 @@ Este proyecto contiene dos scripts en Python que interactúan con la API de City
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/citybikes-project.git
-cd citybikes-project
+git clone https://github.com/noeliasd03/Acceso_Datos_SBD.git
+cd Acceso_Datos_SBD
 ```
 ### 2. Instalar dependencias  
 ```bash
