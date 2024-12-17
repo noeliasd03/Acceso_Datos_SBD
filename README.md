@@ -19,11 +19,11 @@ cd Acceso_Datos_SBD
 pip install -r requirements.txt
 ```
 ### 3. Ejecutar scripts
-Antes que nada poner a funcionar nuestro docker con la base de datos:
+Antes de ejecutar los scripts, asegúrate de que MongoDB esté funcionando: 
 ```bash
 docker run -d --name mongodb -p 27017:27017 mongo
 ```
-Puedes ejecutar los scripts por linea de comandos, el primer script lo puedes ejecutar con Docker. Por línea de comandos sería:  
+Puedes ejecutar los scripts por linea de comandos. El primer script también se puede ejecutar con Docker. Por línea de comandos sería:  
 ```bash
 python script1.py
 ```
@@ -31,7 +31,8 @@ python script1.py
 python script2.py
 ```
 ### 4. Ejecutar script 1 con Docker
-Tienes que ejecutarlo a partir de la imagen subida en Docker Hub: citybikes-script1:
+Para ejecutar el script 1 usando Docker, utiliza la imagen subida en Docker Hub:
+Asegúrate de que el contenedor de MongoBD esté funcionando antes de ejecutarlo.
 ```bash
 docker run -d --name citybikes-script1 --link mongodb:mongo noeliasd03/citybikes-script1
 ```
