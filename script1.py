@@ -11,7 +11,7 @@ coleccion = db["estaciones"]
 # URL de la API
 url = "http://api.citybik.es/v2/networks"
 
-intervalo = 120  # 2 minutos
+intervalo = 30  
 
 while True:
     try:

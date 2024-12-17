@@ -20,6 +20,10 @@ datos = list(coleccion.find({}, {
     "ebikes": 1,
 }))
 
+# convertir id a texto (si no me falla al exportar a parquet)
+for dato in datos: 
+    dato["_id"] = str(dato["_id"])
+
 # cargar datos en un dataframe de pandas
 df = pd.DataFrame(datos)
 
