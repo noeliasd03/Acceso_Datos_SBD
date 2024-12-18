@@ -23,11 +23,8 @@ Clonar el repositorio:
 git clone https://github.com/noeliasd03/Acceso_Datos_SBD.git
 cd Acceso_Datos_SBD
 ```
-### 2. Instalar dependencias  
-```bash
-pip install -r requirements.txt
-```
-### 3. Ejecutar scripts
+
+### 2. Ejecutar scripts
 Antes de ejecutar los scripts, asegúrate de que MongoDB esté funcionando: 
 ```bash
 docker run -d --name mongodb -p 27017:27017 mongo
@@ -39,7 +36,7 @@ python script1.py
 ```bash
 python script2.py
 ```
-### 4. Ejecutar script 1 con Docker
+### 3. Ejecutar script 1 con Docker
 Para ejecutar el script 1 usando Docker, utiliza la imagen subida en Docker Hub:
 Asegúrate de que el contenedor de MongoBD esté funcionando antes de ejecutarlo.
 ```bash
