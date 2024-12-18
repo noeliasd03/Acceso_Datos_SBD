@@ -3,13 +3,22 @@
 ## Descripción
 Este proyecto contiene dos scripts en Python que interactúan con la API de Citybikes y una base de datos MongoDB. 
 
-## Requisitos
-- Python 3.x
-- Docker 
-
 ## Instalación
 
-### 1. Clonar el repositorio
+## 1. Crear el Entorno para el Proyecto y clonar el repositorio
+
+Asegúrate de tener Python 3.8 instalado:   
+Creamos y activamos el entorno:
+```bash
+conda create -n sbd python=3.8
+conda activate sbd
+```
+Instalamos las dependencias (requirements.txr) dentro de nuestro entorno:
+```bash
+conda install pip
+pip install -r requirements.txt
+```
+Clonar el repositorio:
 ```bash
 git clone https://github.com/noeliasd03/Acceso_Datos_SBD.git
 cd Acceso_Datos_SBD
